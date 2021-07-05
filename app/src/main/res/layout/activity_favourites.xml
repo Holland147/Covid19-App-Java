@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--linear layout used as easy to align lots of views -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".favourites"
+    android:orientation="vertical">
+
+    <!--Image button used as an image and a button
+     gets image from drawable
+     id is set to fav_pic this is to show its the logo for favourite page
+     width set to match parent so will fill the page-->
+    <ImageButton
+        android:id="@+id/fav_pic"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:src="@drawable/app_logo"/>
+    <!--id set to editText_fav this shows its the editText for favourite page
+    , allows width is set to match parent so will take up the width of page
+   margin set so its seperated from button and recycler view-->
+    <EditText
+        android:id="@+id/editText_fav"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"/>
+    <!--button id set to add_fav shows the button is for adding on the favourite page
+    width set to match parent so will fill up the page-->
+    <Button
+        android:id="@+id/add_fav"
+        android:text="Add Favourite Country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--id set to listView_Fav show the list view is for favourite page width set to wrap content so will fill page-->
+    <ListView
+        android:id="@+id/listView_Fav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

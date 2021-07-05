@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--linear layout used as easy to align lots of views -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--Image button used as an image and a button
+     gets image from drawable
+     id is set to navagation_data_logo this is to show its the logo for data page-->
+    <ImageButton
+        android:id="@+id/nav_home_logo"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:src="@drawable/app_logo"
+
+
+        />
+    <!--Text view id set to textView_home_welcome  show its text welcome message
+    its position is set with some padding around and centered-->
+    <TextView
+        android:id="@+id/textView_home_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206"
+        android:layout_gravity="center"
+        android:padding="5dp"
+
+        />
+
+
+    <!--id set to display_user_name shows its the username view for home page.
+    position is set with some padding around and centered-->
+    <TextView
+        android:id="@+id/display_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        />
+
+    <!--id is set to editText_user_name this shows it is the editText field for username on the home
+    page, position is set and centered-->
+    <EditText
+        android:id="@+id/editText_user_name"
+        android:layout_width="190dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381"
+        android:layout_gravity="center"
+        />
+
+    <!--id is set to add_name_button and text set to Add name
+    position is set and centered -->
+    <Button
+        android:id="@+id/add_name_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494"
+        android:layout_gravity="center"/>
+
+    <!--id is set to switch_name its position is ser and centerd-->
+    <Switch
+        android:id="@+id/switch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548"
+        android:layout_gravity="center"/>
+
+    <!--id is set to save_name_button showing its the save name button. text is Save name
+    this shows the user its use, position is set and centered-->
+    <Button
+        android:id="@+id/save_name_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667"
+        android:layout_gravity="center"/>
+
+    <!--id is set to nav_button showing its the navigation button, text is set to navigation page
+    shows the user if click will take them to navigation page,position is set and centered-->
+    <Button
+        android:id="@+id/nav_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Navigation Page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

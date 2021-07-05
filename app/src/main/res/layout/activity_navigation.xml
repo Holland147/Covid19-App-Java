@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation">
+
+    <!--Image button used as an image and a button
+     gets image from drawable
+     id is set to navagation_nav_logo this is to show its the logo for data page-->
+    <ImageButton
+        android:id="@+id/navagation_nav_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <!--id is set to dataNav_button this shows its the button to get to country data from the navigation
+    page, text is set to View Country Data postion is set-->
+    <Button
+        android:id="@+id/dataNav_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Country Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462" />
+
+    <!--id is set to button_favourites this shows its the button to get to favourites from the navigation
+    page, text is set to Favourites postion is set-->
+    <Button
+        android:id="@+id/button_favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favourites"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.699" />
+
+    <!--id for text view is set to date_clock the text is set to date but this is changed in java to
+    display the acutal date-->
+    <TextView
+        android:id="@+id/date_clock"
+        android:layout_width="93dp"
+        android:layout_height="27dp"
+        android:text="Date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
